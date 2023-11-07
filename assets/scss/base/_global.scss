@@ -12,7 +12,7 @@ html {
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: rem(12) rem(23);
+    margin: 12 23; // some error here with rem transformation rem(xxx)
 }
 
 h1, 

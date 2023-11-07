@@ -1,6 +1,6 @@
 class Test {
     constructor (){
-        console.log('This is a test module!');
+        alert('Js is working!');
     }
 }
 

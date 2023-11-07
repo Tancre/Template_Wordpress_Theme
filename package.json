@@ -1,8 +1,8 @@
 {
-  "name": "exdisco",
+  "name": "terriwp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,17 +17,16 @@
   },
   "homepage": "https://github.com/Ex-Disco/exdisco-website#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.12",
-    "@babel/preset-env": "^7.17.12",
-    "babel-loader": "^8.2.5",
     "browser-sync": "^2.27.9",
-    "cssnano": "^5.1.8",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
+    "gulp-esbuild": "^0.11.2",
     "gulp-postcss": "^9.0.1",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.51.0",
-    "webpack-stream": "^7.0.0"
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.5"
   },
   "dependencies": {
     "jquery": "^3.6.0",
