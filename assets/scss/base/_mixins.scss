@@ -1,25 +1,13 @@
-@mixin atSmall {
-    @media (min-width: 530px) { @content };
+$breakpoints-width: (
+  "small": "530px",
+  "medium": "800px",
+  "large": "1200px",
+);
+
+$breakpoints-height: "600px";
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-width, $size)) and (min-height: $breakpoints-height) {
+    @content;
+  }
 }
-
-@mixin atMedium {
-	@media (min-width: 800px) { @content };
-}
-
-@mixin atLarge {
-	@media (min-width: 1200px) { @content };
-}
-
-// test this code instead
-
-// $breakpoints: (
-//     'small': '530px',
-//     'medium': '800px',
-//     'large': '1200px',
-// );
-
-// @mixin breakpoint($size) {
-//     @media (min-width: map-get($breakpoints, $size)) {
-//         @content;
-//     }
-// }

@@ -1,14 +1,14 @@
 /*
-    Theme Name: Template Wordpress
-    Author: Dotlinesquare
+    Theme Name: Title Template
+    Author: Me
     Version: 1.0
 
 */
 
-@use 'normalize.css/normalize';
+@use "normalize.css/normalize";
 
-@import 'base/global';
-@import 'base/colors';
-@import 'base/fonts';
-@import 'base/mixins';
-@import 'base/functions';
+@import "base/functions";
+@import "base/mixins";
+@import "base/colors";
+@import "base/fonts";
+@import "base/global";

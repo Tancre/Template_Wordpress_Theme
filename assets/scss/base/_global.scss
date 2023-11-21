@@ -1,34 +1,69 @@
 html {
-    box-sizing: border-box;
-    font-style: 100%;
+  box-sizing: border-box;
+  font-style: 100%;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 12 23; // some error here with rem transformation rem(xxx)
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 0;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 p {
-    margin-top: 0;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-a, 
-a:visited, 
+a,
+a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hide-on-phone {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: inline;
+  }
+}
+
+.show-on-phone {
+  display: inline;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
 }
