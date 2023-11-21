@@ -2,6 +2,7 @@
 A template to buil Wordpress themes in combination with Local by Flywheel and Gulp.
 
 ## Structure
+```bash
 .
 ├── 404.php
 ├── assets
@@ -26,9 +27,10 @@ A template to buil Wordpress themes in combination with Local by Flywheel and Gu
 ├── readme.md
 ├── screenshot.png
 └── single.php
+```
 
 ## Dependencies 
-- **jquery** / **normilize.css** (CSS)
+**jquery** / **normilize.css** (CSS)
  
 ### Dev
 - **gulp** (automation)
@@ -37,9 +39,12 @@ A template to buil Wordpress themes in combination with Local by Flywheel and Gu
 - **esbuild** / **uglify** (JS)
 
 ## Gulp Tasks
-- **CSS** - Bundle css (without autoprefixer and nano) and creates .map.
-- **JS** - Bundle js (without uglify).
-- **watch** - Watch to CSS, JS and PHP and reload browser.
-- **deploy** - Runs the CSS (with autoprefixer and nano) and JS (with uglify) task and copies everything needed into the new folder <code>/dist</code>.
+**CSS** - Bundle css (without autoprefixer and nano) and creates .map.
+
+**JS** - Bundle js (without uglify).
+
+**watch** - Watch to CSS, JS and PHP and reload browser.
+
+**deploy** - Runs the CSS (with autoprefixer and nano) and JS (with uglify) task and copies everything needed into the new folder <code>/dist</code>.
 
 
